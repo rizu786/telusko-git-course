@@ -1,5 +1,5 @@
-def swap(inputlist):
-    #inputlist=[1,2,3,4,5]
+def swaplist(inputlist):
+    
     for i in range(0,len(inputlist)):
         if i%2==1:
             temp=inputlist[i]
@@ -8,10 +8,7 @@ def swap(inputlist):
 
         else:
             continue
-    print(inputlist)
-swap([1,2,3,4,5])
-'''lengthoflist=input("enter the number of list items you are entering")
-for i in range(0,lengthoflist):
-    listtoswap=[int(input("enter the list items to be swapped"))]
-print(type(listtoswap))
-swap(listtoswap)'''
+    return inputlist
+lengthoflist=int(input("enter the number of list items you are entering"))
+listtoswap=[int(input(f"Enter list item {i}")) for i in range(0,lengthoflist)]
+print(swaplist(listtoswap))
