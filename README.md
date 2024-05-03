@@ -1,1 +1,2 @@
-This code is abput addition of two numbers in python.
+This folder includes all the practice python scripts.
+
